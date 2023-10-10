@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    background: rgb(14, 19, 19);
+    background: linear-gradient(0deg, rgba(14, 19, 19, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.box {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    min-height: 300px;
+    min-width: 200px
+}
+
+#item {
+    padding: 7px 10px;
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    display: block;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#item::placeholder {
+    color: rgb(235, 232, 232);
+    font-size: 16px;
+}
+
+#to-do-box {
+    margin-top: 20px;
+    list-style: none;
+}
+
+#to-do-box li {
+    position: relative;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    padding-right: 30px;
+    text-align: justify;
+    margin-top: 10px;
+    user-select: none;
+}
+
+#to-do-box li i {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #000 !important;
+    background-color: #e7ac2d !important;
+}
